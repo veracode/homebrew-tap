@@ -17,6 +17,11 @@ class GenIr < Formula
 
 	uses_from_macos "swift"
 
+	bottle do
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "0d1f47a006c055baa4133c3e2ab4b2c6307fc20561cb2bd2f3294ca4fcf0931e"
+  end
+
 	def install
 		system "swift", "build", "-c", "release", "--disable-sandbox"
 		bin.install "./.build/release/gen-ir"
