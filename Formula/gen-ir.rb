@@ -18,7 +18,7 @@ class GenIr < Formula
 	uses_from_macos "swift"
 
 	bottle do
-		root_url "https://github.com/ninjaLikesCheez/homebrew-tap/raw/master/Bottles"
+		root_url "https://github.com/ninjaLikesCheez/homebrew-tap/raw/main/Bottles"
 		sha256 cellar: :any_skip_relocation, arm64_monterey: "3ec869eac800471799363b6fc5d65fa57d4f006efb495310a31de5ed946fb7f3"
   end
 
