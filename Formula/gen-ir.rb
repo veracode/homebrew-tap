@@ -3,7 +3,7 @@ class GenIr < Formula
 	homepage "https://github.com/NinjaLikesCheez/gen-ir"
 	url "https://github.com/NinjaLikesCheez/gen-ir.git",
 		tag: "v0.1",
-		revision: "4cc12670b261640fd3b0dfcee11756ada221ddd5"
+		revision: "42edd726e18bef53f37beac7760a2c0673ac699f"
 	version_scheme 1
 	head "https://github.com/NinjaLikesCheez/gen-ir.git", branch: "main"
 
