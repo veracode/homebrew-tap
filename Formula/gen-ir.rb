@@ -19,7 +19,7 @@ class GenIr < Formula
 
 	bottle do
 		root_url "https://github.com/ninjaLikesCheez/homebrew-tap/raw/main/Bottles"
-		sha256 cellar: :any_skip_relocation, arm64_monterey: "3ec869eac800471799363b6fc5d65fa57d4f006efb495310a31de5ed946fb7f3"
+		sha256 cellar: :any_skip_relocation, arm64_monterey: "10904e18cc5b8dbad441545c1ad72ad7cf8ea8cd784893d54d37d9875fbd293e"
   end
 
 	def install
