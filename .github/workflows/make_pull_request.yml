@@ -1,0 +1,41 @@
+name: Make Pull Request
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tagged version of gen-ir to use
+        required: true
+      hash:
+        description: Commit hash of the tag
+        required: true
+  
+jobs:
+  make_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create Branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@github.com'
+
+          git checkout -b gen_ir_update_${{ github.events.input.tag }}
+
+      - name: Replace Information
+        run: |
+          sed -i 's/tag:      "/tag:      "${{ github.events.inputs.tag }}",/g'
+          sed -i 's/revision: "/revision: "${{ github.events.inputs.hash}}"/g'
+
+      - name: Commit
+        run: |
+          git commit -m "Update formula to gen-ir version ${{ github.events.inputs.tag }}"
+          git push
+
+      - name: Open PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create --title "gen-ir update ${{ github.events.inputs.tag }}" --body "Automated update for gen-ir version ${{ github.events.inputs.tag }}"
+
