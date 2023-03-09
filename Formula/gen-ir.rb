@@ -20,8 +20,6 @@ class GenIr < Formula
   depends_on xcode: ["13.0", :build]
   depends_on macos: :monterey
 
-  uses_from_macos "swift"
-
   def install
     system "swift", "build", "-c", "release", "--disable-sandbox"
     bin.install "./.build/release/gen-ir"
