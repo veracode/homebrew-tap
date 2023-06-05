@@ -13,8 +13,8 @@ class GenIr < Formula
   end
 
   bottle do
-    root_url "https://github.com/veracode/homebrew-tap/releases/download/gen-ir-0.4.0"
-    sha256 cellar: :any_skip_relocation, monterey: "fd2212ca01340a0b6fa2826509c754727eb609416c4c133731d35332c0b5f6ec"
+    root_url "https://github.com/veracode/homebrew-tap/releases/download/gen-ir-0.4.1"
+    sha256 cellar: :any_skip_relocation, monterey: "fc5142b0d7f687470503f58d2fd122fa32051cd316a7f5dfbf1fcbd879dc4b72"
   end
 
   depends_on xcode: ["13.0", :build]
