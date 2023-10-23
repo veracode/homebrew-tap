@@ -6,12 +6,13 @@ class GenIrAT0311 < Formula
     revision: "a6f915f82056bf69ec2a3a165e3f9b668c032119"
   version_scheme 1
   head "https://github.com/veracode/gen-ir.git", branch: "main"
-  keg_only :versioned_formula
 
   livecheck do
     url :stable
     strategy :github_latest
   end
+
+  keg_only :versioned_formula
 
   bottle do
     root_url "https://github.com/veracode/homebrew-tap/releases/download/gen-ir-0.3.11"
