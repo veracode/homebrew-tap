@@ -12,12 +12,12 @@ class GenIrAT0311 < Formula
     strategy :github_latest
   end
 
-  keg_only :versioned_formula
-
   bottle do
     root_url "https://github.com/veracode/homebrew-tap/releases/download/gen-ir-0.3.11"
     sha256 cellar: :any_skip_relocation, monterey: "23ca2fd7ce19d71ced21e8bc57fd62908a82f3ce3ec145249d431bcf0b9e44e0"
   end
+
+  keg_only :versioned_formula
 
   depends_on xcode: ["13.0", :build]
   depends_on macos: :monterey
