@@ -14,7 +14,8 @@ class GenIrAT050Beta < Formula
 
   bottle do
     root_url "https://github.com/veracode/homebrew-tap/releases/download/gen-ir@0.5.0-beta-0.5.0-beta"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "21c2e3514a18a93df7ba84e6fe59db7b2629e1f30ea86f04060f85323882e2fe"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "43cf147d0dc085faf2666e2424054cc212fa11876bf137dcea80013314edd2d5"
   end
 
   keg_only :versioned_formula
