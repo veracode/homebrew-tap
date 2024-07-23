@@ -3,7 +3,7 @@ class GenIrAT050Beta < Formula
   homepage "https://github.com/veracode/gen-ir"
   url "https://github.com/veracode/gen-ir.git",
     tag:      "0.5.0-beta",
-    revision: "1e8375e1c910d35445e048e56c6cf91b1c79d5c9"
+    revision: "e50e90b5080ba3b50b742891517ba130f44f217f"
   version_scheme 1
   head "https://github.com/veracode/gen-ir.git", branch: "develop"
 
