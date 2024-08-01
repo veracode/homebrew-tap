@@ -1,5 +1,5 @@
 class VeracodeCli < Formula
-  desc "Veracode CLI for security testing of applications"
+  desc "This is the homebrew formula for Veracode CLI"
   homepage "https://www.veracode.com"
   version "2.26.0"
   license "MIT"
