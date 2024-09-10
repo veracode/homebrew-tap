@@ -1,5 +1,5 @@
 class VeracodeCli < Formula
-  desc "Command-line tool for testing application security with Veracode"
+  desc "Command-line test tool for testing application security with Veracode"
   homepage "https://www.veracode.com"
   version "2.31.0"
   license "MIT"
