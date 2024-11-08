@@ -1,12 +1,12 @@
 class ScanHealth < Formula
-  desc "gain insight into the health of a Veracode SAST scan"
+  desc "Gain insight into the health of a Veracode SAST scan"
   homepage "https://github.com/veracode/scan_health"
   url "https://github.com/veracode/scan_health.git",
     tag:      "2.46",
     revision: "2cdbe3d1a958d6d0aebf7b1f71316d737093e59e"
+  license "MIT"
   version_scheme 1
   head "https://github.com/veracode/scan_health", branch: "main"
-  license "MIT"
 
   livecheck do
     url :stable
