@@ -8,11 +8,6 @@ class ScanHealth < Formula
   version_scheme 1
   head "https://github.com/veracode/scan_health", branch: "main"
 
-  livecheck do
-    url :stable
-    strategy :github_latest
-  end
-
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/veracode/scan_health/releases/download/2.46/scan_health-mac-arm64"
