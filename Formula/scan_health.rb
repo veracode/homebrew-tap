@@ -1,4 +1,4 @@
-class ScanHealthAT246 < Formula
+class ScanHealth < Formula
   desc "gain insight into the health of a Veracode SAST scan"
   homepage "https://github.com/veracode/scan_health"
   url "https://github.com/veracode/scan_health.git",
