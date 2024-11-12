@@ -8,6 +8,11 @@ class ScanHealth < Formula
   version_scheme 1
   head "https://github.com/veracode/scan_health.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/veracode/homebrew-tap/releases/download/scan_health-64"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "55a7080195269b686ce7adc8a9e4cd6a4182aa463f3e3eb8c37b334f4c1d83a6"
+  end
+
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/veracode/scan_health/releases/download/2.46/scan_health-mac-arm64"
