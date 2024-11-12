@@ -26,6 +26,6 @@ class ScanHealth < Formula
   end
 
   test do
-    system "#{bin}/scan_health", "--help"
+    system bin/"scan_health", "--help"
   end
 end
