@@ -22,7 +22,15 @@ class ScanHealth < Formula
   end
 
   def install
-    bin.install "scan_health*" => "scan_health"
+    if OS.mac?
+      if Hardware::CPU.arm?
+        bin.install "scan_health-mac-arm64" => "scan_health"
+      elsif Hardware::CPU.intel?
+        bin.install "scan_health-mac-amd64" => "scan_health"
+      end
+    elsif OS.linux?
+      bin.install "scan_health-linux-amd64" => "scan_health"
+    end
   end
 
   test do
