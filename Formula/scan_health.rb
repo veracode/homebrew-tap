@@ -22,7 +22,7 @@ class ScanHealth < Formula
   end
 
   def install
-    bin.install "scan_health-mac-arm64" => "scan_health"
+    bin.install "scan_health*" => "scan_health"
   end
 
   test do
