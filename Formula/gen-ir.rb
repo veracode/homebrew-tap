@@ -2,8 +2,8 @@ class GenIr < Formula
   desc "Generate LLVM IR from an Xcode Build Log"
   homepage "https://github.com/veracode/gen-ir"
   url "https://github.com/veracode/gen-ir.git",
-    tag:      "0.5.3",
-    revision: "3df793ddbb04e9c5df66caf3707c89ec9d7e3162"
+    tag:      "0.5.4",
+    revision: "0bfd3f76d258886c264ca9a6ae2530a47a4726ac"
   version_scheme 1
   head "https://github.com/veracode/gen-ir.git", branch: "main"
 
