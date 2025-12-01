@@ -1,4 +1,4 @@
-class GenIr < Formula
+class GenIrAT054 < Formula
   desc "Generate LLVM IR from an Xcode Build Log"
   homepage "https://github.com/veracode/gen-ir"
   url "https://github.com/veracode/gen-ir.git",
