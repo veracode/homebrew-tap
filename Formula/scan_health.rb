@@ -10,15 +10,15 @@ class ScanHealth < Formula
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/veracode/scan_health/releases/download/2.46/scan_health-mac-arm64"
-      sha256 "a6bd925cd7b81b478f6265d1f708e74d74b95c04260edbb59c7e6229e7e02622"
+      url "https://github.com/veracode/scan_health/releases/download/2.47/scan_health-mac-arm64"
+      sha256 "637de3bad50d8ebb30e32dc7b3d3be0c47a89cc509cbb2446eb3ac00af604077"
     elsif Hardware::CPU.intel?
-      url "https://github.com/veracode/scan_health/releases/download/2.46/scan_health-mac-amd64"
-      sha256 "bfa38ee1b40fca670398fff284e2d2895191363b6276068764ab8a01402b431d"
+      url "https://github.com/veracode/scan_health/releases/download/2.47/scan_health-mac-amd64"
+      sha256 "7378993c1ac940605dd22ccf6374eff43ac6046e51fe1ce7f0a24c8f410889a7"
     end
   elsif OS.linux?
-    url "https://github.com/veracode/scan_health/releases/download/2.46/scan_health-linux-amd64"
-    sha256 "9f994bbd2dac8b47d74d220b2aea2b0abf9a7c93ce6d2456ed8ad2923d1f4f3e"
+    url "https://github.com/veracode/scan_health/releases/download/2.47/scan_health-linux-amd64"
+    sha256 "44ed87e3e1c46c6e603328255161d20d34866b0ea4705cd9ba211a53e5cfa578"
   end
 
   def install
