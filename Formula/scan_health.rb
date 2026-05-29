@@ -2,23 +2,23 @@ class ScanHealth < Formula
   desc "Gain insight into the health of a Veracode SAST scan"
   homepage "https://github.com/veracode/scan_health"
   url "https://github.com/veracode/scan_health",
-    tag:      "2.47",
-    revision: "634e10efea2a5fac8c104f289e4a5ea160706058"
+    tag:      "2.48",
+    revision: "2d00aad56ec9d57f458ca9475a516264c080cc58"
   license "MIT"
   version_scheme 1
   head "https://github.com/veracode/scan_health.git", branch: "main"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/veracode/scan_health/releases/download/2.47/scan_health-mac-arm64"
-      sha256 "637de3bad50d8ebb30e32dc7b3d3be0c47a89cc509cbb2446eb3ac00af604077"
+      url "https://github.com/veracode/scan_health/releases/download/2.48/scan_health-mac-arm64"
+      sha256 "841c0628baa11b7c47a585aac11ec85e23e340e8c9bf90a829e8060c5226be0d"
     elsif Hardware::CPU.intel?
-      url "https://github.com/veracode/scan_health/releases/download/2.47/scan_health-mac-amd64"
-      sha256 "7378993c1ac940605dd22ccf6374eff43ac6046e51fe1ce7f0a24c8f410889a7"
+      url "https://github.com/veracode/scan_health/releases/download/2.48/scan_health-mac-amd64"
+      sha256 "86195f97856e3be59fbd0e69d2d5a52e0342b5935c96be8c19ff319be3571c08"
     end
   elsif OS.linux?
-    url "https://github.com/veracode/scan_health/releases/download/2.47/scan_health-linux-amd64"
-    sha256 "44ed87e3e1c46c6e603328255161d20d34866b0ea4705cd9ba211a53e5cfa578"
+    url "https://github.com/veracode/scan_health/releases/download/2.48/scan_health-linux-amd64"
+    sha256 "e578f160c13d201ee0116b52b6a6c0d72260fa805fdc09305e35d6839469a6a7"
   end
 
   def install
