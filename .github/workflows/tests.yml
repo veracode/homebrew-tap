@@ -36,10 +36,9 @@ jobs:
       - run: brew test-bot --only-setup
 
       - run: brew test-bot --only-tap-syntax
-      - run: ls /Applications | grep Xcode
+      - run: xcode-select -p
       - run: xcodebuild -version
-      - run: |
-          brew test-bot --only-formulae
+      - run: brew test-bot --only-formulae
         if: github.event_name == 'pull_request'
 
       - name: Upload bottles as artifact
